@@ -1,0 +1,53 @@
+@import "./config/reset";
+@import "./config/scrollbar";
+@import "./config/media-breakpoints";
+@import "./components/sidebar";
+@import "./components/header";
+@import "./pages/customers";
+
+body {
+	overflow-x: hidden;
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	background-color: #FAFBFF;
+	color: #404B52;
+}
+
+.wrapper {
+	padding: 40px 0 40px 306px;
+	@include media-breakpoint-down(md) {
+		padding: 20px 0 0 60px;
+	}
+}
+
+.container {
+	max-width: 1016px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.input-wrapper {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background-image: url('/images/icons/search.svg');
+		left: 8px;
+		top: 50%;
+		transform: translate3d(0, -50%, 0);
+	}
+
+	.input {
+		background-color: #F9FBFF;
+		border: none;
+		outline-color: #5932EA;
+		padding: 10px 10px 10px 40px;
+		border-radius: 10px;
+		font-size: 12px;
+		width: 100%;
+	}
+}

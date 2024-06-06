@@ -1,0 +1,48 @@
+aside.sidebar
+	a(href="/").logo
+		img.logo__img(src="/images/logo.svg" width="195" height="39" alt="logo")
+		span.logo__version v0.1
+
+	.sidebar__activator
+		span
+		span
+		span
+
+	ul.menu
+		li.menu__item
+			a(href="/").menu__link
+				img(src="/images/icons/dashboard.svg" width="24" height="24" alt="Dashboard").menu__icon
+				span.menu__name Dashboard
+				img.menu__arrow(src="/images/icons/arrow-right.svg" width="6" height="10" alt="Arrow right")
+		li.menu__item
+			a(href="/").menu__link
+				img(src="/images/icons/product.svg" width="24" height="24" alt="Product").menu__icon
+				span.menu__name Product
+				img.menu__arrow(src="/images/icons/arrow-right.svg" width="6" height="10" alt="Arrow right")
+		li.menu__item
+			a(href="/").menu__link.active
+				img(src="/images/icons/customers.svg" width="24" height="24" alt="Customers").menu__icon
+				span.menu__name Customers
+				img.menu__arrow(src="/images/icons/arrow-right.svg" width="6" height="10" alt="Arrow right")
+		li.menu__item
+			a(href="/").menu__link
+				img(src="/images/icons/income.svg" width="24" height="24" alt="Income").menu__icon
+				span.menu__name Income
+				img.menu__arrow(src="/images/icons/arrow-right.svg" width="6" height="10" alt="Arrow right")
+		li.menu__item
+			a(href="/").menu__link
+				img(src="/images/icons/promote.svg" width="24" height="24" alt="Promote").menu__icon
+				span.menu__name Promote
+				img.menu__arrow(src="/images/icons/arrow-right.svg" width="6" height="10" alt="Arrow right")
+		li.menu__item
+			a(href="/").menu__link
+				img(src="/images/icons/help.svg" width="24" height="24" alt="Help").menu__icon
+				span.menu__name Help
+				img.menu__arrow(src="/images/icons/arrow-right.svg" width="6" height="10" alt="Arrow right")
+
+	.profile
+		img(src="/images/avatar.jpg" width="42" height="42" alt="Avatar").profile__avatar
+
+		.profile__info
+			.profile__name Vlad
+			.profile__position Frontend Developer

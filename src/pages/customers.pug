@@ -1,0 +1,91 @@
+.customers
+	.customers__top
+		.customers__top-left
+			h3.customers__title All Customers
+			.customers__filter Active Members
+
+		.customers__top-right
+			form.customers__search
+				.input-wrapper
+					input(placeholder="Search").input
+
+	.customers__table-wrapper
+		table.customers__table
+			thead.customers__table-head
+				tr.customers__table-row
+					td.customers__table-col Customer Name
+					td.customers__table-col Company
+					td.customers__table-col Phone Number
+					td.customers__table-col Email
+					td.customers__table-col Country
+					td.customers__table-col Status
+			tbody.customers__table-body
+				tr.customers__table-row
+					td.customers__table-col Jane Cooper
+					td.customers__table-col Microsoft
+					td.customers__table-col: a(href="tel:+2255550118") (225) 555-0118
+					td.customers__table-col: a(href="mailto:jane@microsoft.com") jane@microsoft.com
+					td.customers__table-col United States
+					td.customers__table-col: span.customers__table-col_status Active
+				tr.customers__table-row
+					td.customers__table-col Floyd Miles
+					td.customers__table-col Yahoo
+					td.customers__table-col: a(href="tel:+2055550100") (205) 555-0100
+					td.customers__table-col: a(href="mailto:floyd@yahoo.com") floyd@yahoo.com
+					td.customers__table-col Kiribati
+					td.customers__table-col: span.customers__table-col_status.inactive Inactive
+				tr.customers__table-row
+					td.customers__table-col Ronald Richards
+					td.customers__table-col Adobe
+					td.customers__table-col: a(href="tel:+3025550107") (302) 555-0107
+					td.customers__table-col: a(href="ronald@adobe.com") ronald@adobe.com
+					td.customers__table-col Israel
+					td.customers__table-col: span.customers__table-col_status.inactive Inactive
+				tr.customers__table-row
+					td.customers__table-col Marvin McKinney
+					td.customers__table-col Tesla
+					td.customers__table-col: a(href="tel:+2525550126") (252) 555-0126
+					td.customers__table-col: a(href="mailto:marvin@tesla.com") marvin@tesla.com
+					td.customers__table-col Iran
+					td.customers__table-col: span.customers__table-col_status Active
+				tr.customers__table-row
+					td.customers__table-col Jerome Bell
+					td.customers__table-col Google
+					td.customers__table-col: a(href="tel:+6295550129") (629) 555-0129
+					td.customers__table-col: a(href="mailto:jerome@google.com") jerome@google.com
+					td.customers__table-col Réunion
+					td.customers__table-col: span.customers__table-col_status Active
+				tr.customers__table-row
+					td.customers__table-col Kathryn Murphy
+					td.customers__table-col Microsoft
+					td.customers__table-col: a(href="tel:+4065550120") (406) 555-0120
+					td.customers__table-col: a(href="mailto:kathryn@microsoft.com") kathryn@microsoft.com
+					td.customers__table-col Curaçao
+					td.customers__table-col: span.customers__table-col_status Active
+				tr.customers__table-row
+					td.customers__table-col Jacob Jones
+					td.customers__table-col Yahoo
+					td.customers__table-col: a(href="tel:+2085550112") (208) 555-0112
+					td.customers__table-col: a(href="mailto:jacob@yahoo.com") jacob@yahoo.com
+					td.customers__table-col Brazil
+					td.customers__table-col: span.customers__table-col_status Active
+				tr.customers__table-row
+					td.customers__table-col Kristin Watson
+					td.customers__table-col Facebook
+					td.customers__table-col: a(href="tel:+2055550100") (704) 555-0127
+					td.customers__table-col: a(href="mailto:kristin@facebook.com") kristin@facebook.com
+					td.customers__table-col Åland Islands
+					td.customers__table-col: span.customers__table-col_status.inactive Inactive
+
+	.customers__bottom
+		.customers__total Showing data 1 to 8 of 256k entries
+
+		.customers__pagination
+			button.customers__pagination-button <
+			button.customers__pagination-button.active 1
+			button.customers__pagination-button 2
+			button.customers__pagination-button 3
+			button.customers__pagination-button 4
+			span.customers__pagination-space ...
+			button.customers__pagination-button 40
+			button.customers__pagination-button >

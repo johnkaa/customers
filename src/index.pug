@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+	head
+		include components/head
+
+	body
+		include components/sidebar
+
+		main.wrapper
+			.container
+				include components/header
+
+				include pages/customers
+
+		script(src="./js/main.min.js")

@@ -1,0 +1,183 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	max-width: 306px;
+	width: 100%;
+	padding: 36px 28px;
+	background-color: #fff;
+	box-shadow: 0 10px 60px 0 rgba(226,236,249,0.5);
+	display: flex;
+	flex-direction: column;
+	transition: max-width .3s;
+	z-index: 10;
+
+	@include media-breakpoint-down(md) {
+		max-width: 60px;
+		padding: 20px 5px;
+	}
+
+	&.show {
+		@include media-breakpoint-down(md) {
+			max-width: 306px;
+		}
+
+		.logo {
+			display: flex;
+		}
+
+		.sidebar__activator {
+			justify-content: center;
+			position: absolute;
+			right: 20px;
+			top: 34px;
+			span {
+				&:nth-child(1) {
+					transform: rotate(45deg) translateY(2px);
+				}
+				&:nth-child(2) {
+					display: none;
+				}
+				&:nth-child(3) {
+					transform: rotate(-45deg) translateY(-1px);
+				}
+			}
+		}
+
+		.menu {
+			&__link {
+				max-width: unset;
+			}
+
+			&__icon {
+				margin-right: 16px;
+			}
+
+			&__name, &__arrow {
+				display: block;
+			}
+		}
+
+		.profile {
+			display: flex;
+		}
+	}
+
+	&__activator {
+		display: none;
+
+		@include media-breakpoint-down(md) {
+			width: 24px;
+			height: 12px;
+			cursor: pointer;
+			position: relative;
+			margin: 0 auto 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		span {
+			display: block;
+			width: 100%;
+			height: 2px;
+			background-color: #404B52;
+		}
+	}
+}
+
+.logo {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 52px;
+	max-width: 220px;
+
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+
+	&__version {
+		font-size: 10px;
+		color: #838383;
+		margin-left: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+.menu {
+	&__item + &__item {
+		margin-top: 18px;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		padding: 11px;
+		border-radius: 8px;
+		transition: background-color .3s, color .3s;
+		letter-spacing: -0.01em;
+
+		@include media-breakpoint-down(xl) {
+			max-width: 50px;
+			justify-content: center;
+		}
+
+		&:hover, &.active {
+			background-color: #5932EA;
+			color: #fff;
+
+			.menu {
+				&__icon, &__arrow {
+					filter: brightness(0) saturate(100%) invert(95%) sepia(18%) saturate(0%) hue-rotate(218deg) brightness(104%) contrast(101%);
+				}
+			}
+		}
+	}
+
+	&__icon, &__arrow {
+		transition: filter .3s;
+	}
+
+	&__icon {
+		margin-right: 16px;
+		@include media-breakpoint-down(xl) {
+			margin-right: 0;
+		}
+	}
+
+	&__name {
+		@include media-breakpoint-down(xl) {
+			display: none;
+		}
+	}
+
+	&__arrow {
+		margin-left: auto;
+
+		@include media-breakpoint-down(xl) {
+			display: none;
+		}
+	}
+}
+
+.profile {
+	margin-top: auto;
+	display: flex;
+
+	@include media-breakpoint-down(xl) {
+		display: none;
+	}
+
+	&__avatar {
+		border-radius: 50%;
+		object-fit: contain;
+		margin-right: 12px;
+		color: #000;
+	}
+
+	&__position {
+		font-weight: 400;
+		color: #757575;
+	}
+}
