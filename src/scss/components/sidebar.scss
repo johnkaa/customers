@@ -118,7 +118,7 @@
 		transition: background-color .3s, color .3s;
 		letter-spacing: -0.01em;
 
-		@include media-breakpoint-down(xl) {
+		@include media-breakpoint-down(md) {
 			max-width: 50px;
 			justify-content: center;
 		}
@@ -141,13 +141,13 @@
 
 	&__icon {
 		margin-right: 16px;
-		@include media-breakpoint-down(xl) {
+		@include media-breakpoint-down(md) {
 			margin-right: 0;
 		}
 	}
 
 	&__name {
-		@include media-breakpoint-down(xl) {
+		@include media-breakpoint-down(md) {
 			display: none;
 		}
 	}
@@ -155,7 +155,7 @@
 	&__arrow {
 		margin-left: auto;
 
-		@include media-breakpoint-down(xl) {
+		@include media-breakpoint-down(md) {
 			display: none;
 		}
 	}
@@ -165,7 +165,7 @@
 	margin-top: auto;
 	display: flex;
 
-	@include media-breakpoint-down(xl) {
+	@include media-breakpoint-down(md) {
 		display: none;
 	}
 
